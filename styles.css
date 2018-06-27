@@ -1,0 +1,32 @@
+p {
+    margin: 0px;
+    padding: 0px;
+}
+.card {
+    width:  400px;
+    border: 2px solid black;
+    padding: 10px;
+}
+.info {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.short {
+    margin-top: 5px;
+    font-style: italic;
+}
+.keyInfo {
+    margin-top: 20px;
+    display: flex;
+}
+.leftBox {
+    font-weight: bold;
+    width: 45%;
+}
+.rightBox {
+}
+.detailed {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
