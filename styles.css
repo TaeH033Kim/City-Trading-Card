@@ -1,21 +1,16 @@
-.container {
-    display: flex;
-}
-.box {
-}
-
 p {
     margin: 0px;
     padding: 0px;
 }
 .card {
     width:  500px;
-    border: 2px solid black;
+    border: 1px solid #DCDCDC;
+    box-shadow: 6px 6px 1px 0px #EBEBEB;
     padding: 10px;
 }
 .info {
     margin-top: 20px;
-    border: 1px solid black;
+    border: 1px solid #DCDCDC;
     padding: 10px;
 }
 .short {

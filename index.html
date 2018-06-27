@@ -2,58 +2,9 @@
 <html>
     <head>
         <title>City Trading Card</title>
-        <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <div>
-            <h1>City Trading Card</h1>
-        </div>
-        <div>
-            <select id="cities" onchange="getSelectValue();">
-                <option value="austin">Austin</option>
-                <option value="chicago">Chicago</option>
-                <option value="detroit">Detroit</option>
-                <option value="houston">Houston</option>
-                <option value="losangeles">Los Angeles</option>
-                <option value="newyork">New York</option>
-                <option value="philadelphia">Philadelphia</option>
-                <option value="phoenix">Phoenix</option>
-                <option value="sanantonio">San Antonio</option>
-                <option value="sandiego">San Diego</option>
-                <option value="sanfrancisco">San Francisco</option>
-                <option value="sanjose">San Jose</option>
-                <option value="seattle">Seattle</option>
-            </select>
-        </div>
-        <div clas="container">
-            <div class="box">
-                <ul>
-                    <li><a href="cities/austin.html" target="card">Austin</a></li>
-                    <li><a href="cities/chicago.html" target="card">Chicago</a></li>
-                    <li><a href="cities/detroit.html" target="card">Detroit</a></li>
-                    <li><a href="cities/houston.html" target="card">Houston</a></li>
-                    <li><a href="cities/losangeles.html" target="card">Los Angeles</a></li>
-                    <li><a href="cities/newyork.html" target="card">New York</a></li>
-                    <li><a href="cities/philadelphia.html" target="card">Philadelphia</a></li>
-                    <li><a href="cities/phoenix.html" target="card">Phoenix</a></li>
-                    <li><a href="cities/sanantonio.html" target="card">San Antonio</a></li>
-                    <li><a href="cities/sandiego.html" target="card">San Diego</a></li>
-                    <li><a href="cities/sanfrancisco.html" target="card">San Francisco</a></li>
-                    <li><a href="cities/sanjose.html" target="card">San Jose</a></li>
-                    <li><a href="cities/seattle.html" target="card">Seattle</a></li>
-                </ul>
-            </div>
-            <div class="box">
-                <iframe width=535px height=500px name="card"></iframe>
-            </div>
-        </div>
-
-        <script>
-            function getSelectValue() {
-                var selectedValue = document.getElementById("cities").value;
-                console.log(selectedValue);
-                window.open("cities/"+selectedValue+".html");
-            }
-        </script>
-    </body>
+    <frameset cols="30%, *">
+        <frame src="city_list.html" frameborder="0">
+        <frame src="display_card.html" frameborder="0">
+    </frameset>
 </html>
